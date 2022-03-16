@@ -53,7 +53,7 @@ function Δneighbors( state , near_state , system ;p = system,n=p.n)
 
         t_nb = friends[t] ## nearest friend at time t
 
-        if t_nb+n<T && t_nb-n>0 ## stay in time bounds...
+        if t_nb+n<T ## stay in time bounds...
             
             t⁺ , t_nb⁺= t:t+n-1 , t_nb:t_nb+n-1 ## time horizons (n)
 
